@@ -1,0 +1,412 @@
+/* Test2.module.css */
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E8F4FA;
+    
+}
+
+
+
+.content {
+    flex: 1;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    background-color: #fab5704c;
+    position: absolute;
+}
+
+
+
+.container .box {
+    width: 11.875em;
+    height: 15.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .box .title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.container .box div strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.container .box div p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.container .box div span {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.container .box div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: 0.2rem;
+}
+
+.container .box:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+
+.main {
+    margin-top: 110px;
+
+}
+
+.main section {
+    margin-bottom: 40px; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(207, 235, 252);
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 380px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.main h2 {
+    margin-bottom: 10px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px 0px;
+}
+
+.course {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-info {
+    margin-bottom: 10px;
+}
+
+.course-progress {
+    height: 5px;
+    background-color: #ab0e0e;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #e7e8e8;
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+    font-weight: 700;
+    
+}
+
+.searchBox {
+    display: flex;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
+}
+
+
+.courseCard {
+    background-color: rgb(243, 250, 255);
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 285px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Adding border */
+}
+
+.courseCard h3{
+    color: #055c9f;
+    padding-top: 11px;
+    font-weight: 600;
+}
+
+.thumbnail {
+    padding-top: 6px;
+    width: 280px;
+    height: 180px;
+}
+
+.cardContent {
+    text-align: center;
+}
+
+/* Existing styles remain the same */
+
+.box{
+    margin-top: 150px;
+}
+
+
+.searchBtn input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 6px 18px; /* Adjust as needed */
+    font-size: 15px; /* Adjust as needed */
+    width: 500px; /* Account for button width */
+    height: 21px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px 0px 0px 12px;
+    color: #000000;
+  }
+  
+  .searchBtn input[type="text"]::placeholder {
+    color: #939393; /* Adjust as needed */
+    font-weight: lighter; /* Lighter text for placeholder */
+  }
+  
+  .submitSearch button {
+    background-color: rgb(228, 228, 228); 
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    padding: 8px 10px; /* Adjust padding if needed */
+    cursor: pointer;
+    display: flex; /* Display icon and optional text */
+    align-items: center;
+  }
+  
+  .searchBtn{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2px;
+    padding-left: 65px;
+  }
+  
+  .searchBtn button img {
+    width: 17px; /* Adjust width as needed */
+    height: 17px; /* Adjust height as needed */
+    
+  }
+
+
+.log{
+  margin-left: 9px;
+  cursor:pointer;
+  margin-top: 2px;
+  background-color: #30768D;
+  border-radius: 30px;
+  height: 35px;
+  border: none;
+}
+
+.log h3{
+
+color: white;
+font-size: 14px;
+padding: 2px 15px;
+}
+
+  .top {
+    padding-top: 36px;
+    background-color: #E8F4FA;
+    display: flex;
+    flex-direction: row;
+    position: fixed; /* Keep the top section fixed */
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  #ELCAMINO{
+    font-size: 40px;
+    padding-top: 5px;
+    padding-left: 60px;
+    color: #30768D;
+    line-height: 0;
+    padding-right: 165px; 
+   
+  }
+
+
+  .navi{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-left: 85px;
+}
+
+.navi a{
+  color: #30768D;
+  font-weight: 560;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.navi a:hover {
+  color: #000000; 
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+}
+
+.profileBtn{
+  margin-top: -6px;
+  padding-left: 45px;
+  cursor: pointer
+}
+
+.profileBtn img{
+    width: 65px;
+    height: 52px;
+  }
+  
+#mainTitle{
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .like{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .like img{
+    width: 26px;
+    height: 25px;
+    padding-top: 15px;
+    padding-left: 30px;
+  }
+
+  .likeAndRate{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+  }
+
+
+  #rate{
+    padding-left: 10px;
+  }
+
+  .advertisment {
+    position: fixed; /* Fixed position */
+    top: 110px; /* Adjust top position as needed */
+    left: 0; /* Align to the right */
+    width: 300px; /* Adjust width as needed */
+    height: 100%;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #DBECF5;
+    border-radius: 0px 15px 0px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ad img{
+    padding-left: 28px;
+    padding-top: 20px;
+    width: 230px; /* Adjust the width as per your requirement */
+    height: 260px;
+  }
+  
+  #ad2{
+    padding-top: 35px;
+  }
+  
+  .profileBtn {
+    position: relative; /* Confirm this is set to position the .userData tooltip correctly */
+    display: inline-block; /* Ensures the container fits the content */
+}
+
+.userData {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position it below the .profileBtn */
+    left: 50%;
+    width: 20px;
+    transform: translateX(-50%); /* Center it horizontally */
+    background-color: rgba(46, 46, 46, 0.723); /* Semi-transparent background */
+    backdrop-filter: blur(12px); /* Blur effect for the background */
+    color: #000; /* Text color */
+    padding: 15px 15px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners for the tooltip */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+    font-size: 15px; /* Text size */
+    z-index: 20; /* Ensure it appears above other content */
+    white-space: normal; /* Allows text wrapping */
+    text-align: center; /* Aligns the text to the left */
+    margin-top: 12px; /* Space between the .profileBtn and the tooltip */
+    min-width: 160px; /* Minimum width of the tooltip */
+}
+
+.profileBtn:hover .userData {
+    display: block; 
+}
+
+#username{
+  margin-bottom: -1px;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#result{
+  color: #1da2ef;
+  font-weight: 700;
+  font-size: 25PX;
+}
+
+/* Define a class for the circle */
+.circle {
+  width: 70px; /* Adjust the size of the circle as needed */
+  height: 70px;
+  border-radius: 50%; /* Ensure it's a circle */
+  background-color: #4190AA; /* Change the background color as desired */
+  display: inline-flex; /* Ensure it wraps around the text */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-right: 5px; /* Add spacing between the letter and the circle */
+
+}
+
+/* Adjust the font size and color of the letter */
+.circle span {
+  color: white; /* Change the text color */
+  font-size: 36px; /* Adjust the font size as needed */
+  line-height: 1; 
+  font-weight: 700;
+}

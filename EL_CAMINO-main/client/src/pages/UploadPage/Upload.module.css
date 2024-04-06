@@ -1,0 +1,390 @@
+.fullPage{
+  width: 100%;
+  min-height: 100vh;
+  background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 
+  2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(232,244,250),rgb(232,244,250));
+ 
+}
+
+.top {
+  padding-top: 36px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  position: fixed; /* Keep the top section fixed */
+  background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 
+  2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(232,244,250),rgb(232,244,250));
+  z-index: 999;
+}
+
+#ELCAMINO{
+  font-size: 40px;
+  padding-top: 5px;
+  padding-left: 60px;
+  color: #30768D;
+  line-height: 0;
+  margin-right: 105px; 
+}
+
+.navi{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-left: 833px;
+}
+
+.navi a{
+  color: #30768D;
+  font-weight: 560;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.navi a:hover {
+  color: #000000; 
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+}
+
+.profileBtn{
+  margin-top: -6px;
+  padding-left: 60px;
+  cursor: pointer
+}
+
+.profileBtn img{
+  width: 65px;
+  height: 52px;
+}
+
+
+.uploadlogo {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  margin-bottom: -25px;
+}
+
+
+.uploadlogo h2{
+  color: #15586e;
+  font-size: 30px
+}
+
+.uploadingContent {
+  position: absolute; /* Absolute positioning */
+  top: 95px; /* Adjust top as needed */
+  z-index: 2; /* Higher z-index to be on top */
+  /* Other styles... */
+}
+
+.bgRectangle {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bg{
+  width: 83%;
+  height: 1200px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+}
+
+
+.inputfields{
+  padding-top: 9px;
+}
+
+
+.cont1, .cont2 {
+  position: relative; 
+  width: 400px; 
+}
+
+.cont3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70px; 
+}
+
+#coin{
+  color: #30768D;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.bottomRow{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1px;
+  justify-content: space-between; 
+}
+
+/* Styles for the input field */
+.cont1 input[type="text"],
+.cont2 input[type="text"] {
+  border: none;
+  border-bottom: 4px solid #30768D;
+  font-size: 17px;
+  padding: 5px 30px 5px 5px; /* Padding inside the input, make right padding larger for the button */
+  color: #000000;
+  background: transparent;
+  outline: none;
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding and border in the input's width */
+}
+
+.cont3 input[type="text"] {
+  margin-left: 16px;
+  border-top: 2px solid #30768D;
+  border-bottom: 2px solid #30768D;
+  border-right: 7px solid #30768D;
+  border-left: 2px solid #30768D;
+  font-size: 17px;
+  padding: 5px 30px 5px 5px; /* Padding inside the input, make right padding larger for the button */
+  color: #000000;
+  background: transparent;
+  outline: none;
+  width: 15%; /* Full width of the container */
+  box-sizing: border-box; /* Include padding and border in the input's width */
+  margin-top: 18px;
+}
+
+
+input[type="text"]::placeholder {
+  color: #aaa;
+  font-size: 17px;
+}
+
+/* Styles for the clear button */
+.clearButton {
+  padding: 0 6px;
+  position: absolute; /* Position absolutely within .cont1/.cont2 */
+  right: 0; /* Align to the right */
+  top: 50%; /* Align vertically */
+  transform: translateY(-50%); /* Center vertically */
+  border: none;
+  background: transparent;
+  color: #30768D;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.clearButton:hover {
+  color: #000000;
+}
+
+.keywordText, .DecText{
+  font-size: 20px;
+  color: #30768D;
+  font-weight: 650;
+  margin-bottom: 13px;
+}
+
+.keyword, .Desc{
+  display: flex;
+  flex-direction: column;
+}
+
+.keyword input[type="text"]{
+  background-color: white;
+  color: black;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.keyword input[type="text"]::placeholder{
+ padding-left: 330px;
+ opacity: 30%;
+}
+
+.cont3 input[type="text"]{
+  background-color: white;
+}
+
+.cont3 input[type="text"]::placeholder{
+  color: #9b9a9a;
+  padding-left: 5px;
+}
+
+.Desc textarea{
+  background-color: white;
+  border: none;
+  height: 60px;
+  border-radius: 10px;
+  color: #000000;
+  padding: 15px 30px;
+}
+
+
+.Desc textarea::placeholder {
+  opacity: 30%;
+  font-size: 15px; 
+  padding-left: 300px; 
+  padding-top: 23px;
+}
+
+.uploadvideo, .uploadimg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a2d6ef58;
+  padding: 28px 0px 18px 0px;
+  outline: 3px dashed #5299bca1;
+  margin-bottom: 30px;
+
+}
+
+.uploadimg{
+  margin-bottom: 60px;
+}
+
+.uploadvideo p{
+  color: rgb(211, 4, 4);
+  font-weight: 700;
+  margin-top: -16px;
+}
+
+.uploadingform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose{
+  margin-left:68px;
+}
+
+.uploadvideo h2, .uploadimg h2{
+  color: black;
+}
+
+#imgVideoUp{
+  width: 110px;
+  height: 80px;
+}
+
+#imgthumbnailUp{
+  width: 70px;
+  height: 70px;
+}
+
+.uploadingform button{
+  margin-top: 20px;
+  background-color: #30768D;
+  border: none;
+  font-size: 14px;
+  border-radius: 15px;
+  font-weight:550;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+.uploadingform button {
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Adding transition for smooth animation */
+}
+
+.uploadingform button:hover {
+  transform: translateY(-2px); /* Move the button up slightly */
+  background-color: #15586e; /* Change background color on hover */
+}
+
+#finish{
+  background-color: #15586e;
+  border: none;
+  padding: 0px 23px;
+  font-size: 14px;
+  width: 140px;
+  margin-top: -95px;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 700px;
+}
+
+
+.userData {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 90%; /* Position it below the .profileBtn */
+  left: 94%;
+  width: 20px;
+  transform: translateX(-50%); /* Center it horizontally */
+  background-color: rgba(46, 46, 46, 0.723); /* Semi-transparent background */
+  backdrop-filter: blur(12px); /* Blur effect for the background */
+  color: #000; /* Text color */
+  padding: 15px 15px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the tooltip */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+  font-size: 15px; /* Text size */
+  z-index: 20; /* Ensure it appears above other content */
+  white-space: normal; /* Allows text wrapping */
+  text-align: center; /* Aligns the text to the left */
+  margin-top: 12px; /* Space between the .profileBtn and the tooltip */
+  min-width: 160px; /* Minimum width of the tooltip */
+}
+
+.profileBtn:hover .userData {
+  display: block; 
+}
+
+#username{
+margin-bottom: -1px;
+font-size: 15px;
+color: #ffffff;
+font-weight: 600;
+}
+
+#result{
+color: #1da2ef;
+font-weight: 700;
+font-size: 25PX;
+}
+
+/* Define a class for the circle */
+.circle {
+width: 70px; /* Adjust the size of the circle as needed */
+height: 70px;
+border-radius: 50%; /* Ensure it's a circle */
+background-color: #4190AA; /* Change the background color as desired */
+display: inline-flex; /* Ensure it wraps around the text */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+margin-right: 5px; /* Add spacing between the letter and the circle */
+
+}
+
+/* Adjust the font size and color of the letter */
+.circle span {
+color: white; /* Change the text color */
+font-size: 36px; /* Adjust the font size as needed */
+line-height: 1; 
+font-weight: 700;
+}

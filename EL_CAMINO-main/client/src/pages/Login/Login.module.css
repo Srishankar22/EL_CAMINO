@@ -1,0 +1,124 @@
+.loginContainer {
+    background-image: url('/bg.png');
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+
+.content {
+   padding-top: 200px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+  
+  h1 {
+    margin: 0;
+    color: #002f34; /* Color picked from the image, adjust as needed */
+    font-size: 2em; /* Adjust size as needed */
+  }
+  
+  h2 {
+    margin: 10px 0;
+    color: #003f48; /* Color picked from the image, adjust as needed */
+    font-size: 1.5em; /* Adjust size as needed */
+  }
+  
+  h3 {
+    margin: 0;
+    color: #004f5d; /* Color picked from the image, adjust as needed */
+    font-size: 1.2em; /* Adjust size as needed */
+    font-weight: normal;
+  }
+  
+  .loginForm {
+    width: 300px; /* Adjust width as needed */
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(245, 250, 255);
+    padding: 35px;
+    border-radius: 18px;
+  }
+  
+  .loginForm input {
+    width: 260px;
+    margin: 5px 0;
+    padding: 15px;
+    border-bottom: 5px solid #30768D; /* Adjust the border color as needed */
+    border-radius: 8px;
+    background-color: rgb(249, 249, 249);
+    color: black;
+  }
+  
+  .loginForm button {
+    width: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #30768D; /* Adjust button color as needed */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .loginForm button:hover {
+    background-color: #08475c ; /* Adjust button hover color as needed */
+  }
+
+
+  .loginForm h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  
+  
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+}
+
+  .header h1 {
+    margin: 0;
+    color: #30768D; /* Color picked from the image, adjust as needed */
+    font-size: 60px; /* Adjust size as needed */
+  }
+  
+  .header h2 {
+    margin-top: -15px;
+    color: black; /* Color picked from the image, adjust as needed */
+    font-size: 12px;
+    font-weight: 750; /* Adjust size as needed */
+  }
+  
+
+  .loginBg {
+    background-image: url('p1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 58%;
+    height: 100vh;
+    transition: background-image 3s ease-in-out; /* Add this line */
+    
+}
+
+.footer{
+  padding-top: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 550;
+  
+}
+

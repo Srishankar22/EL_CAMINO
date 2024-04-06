@@ -1,0 +1,317 @@
+
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #E8F4FA;
+}
+
+.top {
+  padding-top: 36px;
+  padding-bottom: 20px;
+  background-color: #E8F4FA;
+  display: flex;
+  flex-direction: row;
+  position: fixed; /* Keep the top section fixed */
+  top: 0; /* Stick it to the top of the viewport */
+  left: 0;
+  right: 0;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+#ELCAMINO{
+  font-size: 40px;
+  padding-top: 5px;
+  padding-left: 60px;
+  color: #30768D;
+  line-height: 0;
+  padding-right: 165px; 
+ 
+}
+
+.pageContent{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.advertisment {
+  position: fixed; /* Fixed position */
+  top: 110px; /* Adjust top position as needed */
+  left: 0; /* Align to the right */
+  width: 300px; /* Adjust width as needed */
+  height: 100%;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #DBECF5;
+  border-radius: 0px 15px 0px 0px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ad img{
+  padding-left: 28px;
+  padding-top: 20px;
+  width: 230px; /* Adjust the width as per your requirement */
+  height: 260px;
+}
+
+#ad2{
+  padding-top: 35px;
+}
+
+.courseContainer{
+    padding-left: 390px;
+}
+
+.searchBtn input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 6px 18px; /* Adjust as needed */
+  font-size: 15px; /* Adjust as needed */
+  width: 500px; /* Account for button width */
+  height: 21px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px 0px 0px 12px;
+  color: #000000;
+}
+
+.searchBtn input[type="text"]::placeholder {
+  color: #939393; /* Adjust as needed */
+  font-weight: lighter; /* Lighter text for placeholder */
+}
+
+.submitSearch button {
+  background-color: rgb(228, 228, 228); 
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  padding: 8px 10px; /* Adjust padding if needed */
+  cursor: pointer;
+  display: flex; /* Display icon and optional text */
+  align-items: center;
+}
+
+.searchBtn{
+  display: flex;
+  flex-direction: row;
+  padding-top: 2px;
+  padding-left: 70px;
+}
+
+.searchBtn button img {
+  width: 17px; /* Adjust width as needed */
+  height: 17px; /* Adjust height as needed */
+  
+}
+
+.navi{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-left: 130px;
+}
+
+.navi a{
+  color: #30768D;
+  font-weight: 560;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.navi a:hover {
+  color: #000000; 
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+}
+
+.profileBtn{
+  margin-top: -6px;
+  padding-left: 60px;
+  cursor: pointer
+}
+
+.profileBtn img{
+  width: 65px;
+  height: 52px;
+}
+
+
+.courseList {
+    color: #000000;
+    list-style-type: none;
+    padding: 0;
+    padding-top: 100px;
+    margin: 0;
+  }
+  
+  .contentDetails {
+    color: rgb(15, 15, 15);
+    margin-top: -24px;
+    font-weight: 650;  
+  }
+  
+  .courseDetails .owner {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  .courseItem {
+    margin-bottom: 20px;
+  }
+  
+  .containerOverlay {
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Indicates clickable items */
+  }
+  
+  .courseContainer {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 35px;
+  }
+  
+
+  .thumbnail {
+    margin-top: 6px;
+  }
+  
+  .thumbnail img {
+    width: 210px;
+    height: 138px;
+    border-radius: 8px;
+  }
+  
+  .courseDetails {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .heading {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .MainHead {
+    font-weight: 640;
+    font-size: 19px; /* Unified font size */
+    color: black; /* Add your desired color */
+  }
+  
+  .SubHead {
+    font-weight: normal; /* Less emphasis on sub-head */
+    font-size: 18px; /* Unified font size */
+    font-weight: 400;
+    color: black; /* Add your desired color */
+  }
+  
+  .courseDescription{
+    margin-top: -6px;
+    font-size: 16px;
+    font-weight: 430;
+  }
+  
+  .rating,
+  .coins {
+    font-weight: bold;
+    font-size: 15.4px;
+  }
+  
+  .costRate {
+    display: flex;
+    font-size: 13.8px;
+    margin-top: -15px;
+    gap: 30px;
+  }
+  
+  .owner{
+    color: #818181;
+    font-weight: 500;
+  }
+
+  .rating {
+    color: black; /* Ensuring visibility */
+  }
+  
+  .coins {
+    color: rgb(57, 191, 57); /* A green color for coins */
+  }
+  
+
+
+  /* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 13px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #C8EDFF; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #73b5d5; /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2679a2; /* Color of the scrollbar thumb on hover */
+}
+  
+
+
+.userData {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 80%; /* Position it below the .profileBtn */
+  left: 90%;
+  width: 20px;
+  transform: translateX(-50%); /* Center it horizontally */
+  background-color: rgba(46, 46, 46, 0.723); /* Semi-transparent background */
+  backdrop-filter: blur(12px); /* Blur effect for the background */
+  color: #000; /* Text color */
+  padding: 15px 15px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners for the tooltip */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+  font-size: 15px; /* Text size */
+  z-index: 20; /* Ensure it appears above other content */
+  white-space: normal; /* Allows text wrapping */
+  text-align: center; /* Aligns the text to the left */
+  margin-top: 12px; /* Space between the .profileBtn and the tooltip */
+  min-width: 160px; /* Minimum width of the tooltip */
+}
+
+.profileBtn:hover .userData {
+  display: block; 
+}
+
+#username{
+margin-bottom: -1px;
+font-size: 15px;
+color: #ffffff;
+font-weight: 600;
+}
+
+#result{
+color: #1da2ef;
+font-weight: 700;
+font-size: 25PX;
+}
+
+/* Define a class for the circle */
+.circle {
+width: 70px; /* Adjust the size of the circle as needed */
+height: 70px;
+border-radius: 50%; /* Ensure it's a circle */
+background-color: #4190AA; /* Change the background color as desired */
+display: inline-flex; /* Ensure it wraps around the text */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+margin-right: 5px; /* Add spacing between the letter and the circle */
+
+}
+
+/* Adjust the font size and color of the letter */
+.circle span {
+color: white; /* Change the text color */
+font-size: 36px; /* Adjust the font size as needed */
+line-height: 1; 
+font-weight: 700;
+}

@@ -1,0 +1,99 @@
+.container input {
+  position: absolute;
+  z-index: 3; /* higher than the icon's z-index to ensure it captures the click */
+  top: 50%; /* start at the vertical center of the container */
+  left: 50%; /* start at the horizontal center of the container */
+  transform: translate(-50%, -50%); /* center the checkbox on both axes */
+  width: 48px; /* match the SVG icon size, adjust as needed */
+  height: 48px; /* match the SVG icon size, adjust as needed */
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container {
+  pointer-events: none; /* Disable click events on the label */
+}
+
+.container .icon {
+  pointer-events: auto; /* Enable click events on the SVG icon */
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  padding-top:20px;
+  padding-left: 930px;
+  width: 75px;
+}
+
+
+/* Create a custom checkbox */
+.checkmark {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: .2s ease-in-out;
+  z-index: 2;
+}
+
+.icon {
+  margin: 0.2em;
+  width: 30px;
+  height: 30px;
+  fill: black;
+  transition: .4s ease-in-out;
+}
+
+
+.checkmark:hover .icon {
+  fill: rgb(10, 96, 130);
+  transform: rotate(-8deg);
+  transform-origin: bottom left;
+}
+
+.container input:checked ~ .checkmark .icon {
+  fill: rgb(5, 193, 55);
+  transform: none;
+  animation: 0.5s jump_3951;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+@keyframes up_3951 {
+  100% {
+    transform: translateY(-2em);
+  }
+}
+
+@keyframes jump_3951 {
+  50% {
+    transform-origin: center;
+    transform: translateY(-0.5em) rotate(-8deg);
+  }
+
+  100% {
+    transform-origin: center;
+    transform: translateY(0em);
+  }
+}
+
+#likeCount{
+  color: black;
+  font-weight: 600;
+  padding-top: 5px;
+}
