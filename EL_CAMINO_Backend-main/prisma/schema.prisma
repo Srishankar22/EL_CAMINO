@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Course {
+  courseId    Int      @default(autoincrement()) @id
+  courseDomain String
+  courseName   String
+  description  String
+  value        Int
+  rating       Decimal  @db.Decimal(6,4)
+  ownerId      Int
+  thumbnail    String
+  video        String
+  views        Int      @default(0)
+  likes        Int      @default(0)
+  comments     String   @default("")
+  keywords     String   // should try to pass this as comma separated values, because it doesn't support string arrays
+  enrollments  Enrollment[]
+}
+
+model Users {
+  id             Int       @id @default(autoincrement())
+  name           String  
+  username       String    @unique 
+  email          String    @unique 
+  password       String    //hashing
+  interest       String   
+  points         Int       @default(100)
+  enrollments  Enrollment[]
+}
+
+
+model Enrollment {
+  id       Int @default(autoincrement()) @id
+  courseId Int
+  userId   Int
+  createdAt DateTime @default(now())
+  liked Boolean @default(false)
+  course   Course @relation(fields: [courseId], references: [courseId])
+  user     Users   @relation(fields: [userId], references: [id])
+  @@unique([userId, courseId])
+}
