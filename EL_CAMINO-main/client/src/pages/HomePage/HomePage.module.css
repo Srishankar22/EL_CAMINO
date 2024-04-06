@@ -1,0 +1,43 @@
+.homePageBG{
+    background-image: url('/frame3.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling and hide overflowing content */
+    position: relative;
+    
+}
+
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 750px;
+  }
+  
+#title {
+    /* padding-left: 470px; */
+    font-size: 110px; 
+    padding-top: 45px;
+    font-weight: 600;
+    font-family: 'Univers-Next-Pro-Regular', sans-serif; 
+    color: #30768D;
+    margin-bottom: -36px;
+}
+  
+#subtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 23px; 
+    font-weight: 750;
+    color: black;
+    padding-left: 1px; 
+}
+
+#image img{
+    position: absolute;
+    top:67px;
+    left: 60px;
+    width: 49%;
+    height: auto;
+}
